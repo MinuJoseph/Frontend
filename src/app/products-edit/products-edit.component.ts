@@ -12,15 +12,11 @@ export class ProductsEditComponent {
   product: any={}
   constructor(private api : ApiService){}
   post(product: any){
+    
     this.api.postProduct(product);
     
   }
-  delete(product: any){
-    this.api.deleteProduct(product);
-  }
-  update(product: any){
-    this.api.updateProduct(product);
-  }
+ 
 
 }
 

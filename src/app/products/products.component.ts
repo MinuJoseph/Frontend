@@ -27,13 +27,7 @@ export class ProductsComponent {
       this.api.postProduct(product);
     }
 
-    delete(product: any){
-      this.api.deleteProduct(product);
-    }
-
-    update(product: any){
-      this.api.updateProduct(product)
-    }
+    
 
 }
     
