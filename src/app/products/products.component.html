@@ -1,0 +1,11 @@
+<mat-card>
+    <mat-card-content>
+        Product Name List
+        <mat-list *ngFor="let product of products">
+            <mat-list-item> Product: {{product.name}}<br> Price: {{product.price}}</mat-list-item>
+          </mat-list>
+  </mat-card-content>
+  <mat-card-actions>
+     </mat-card-actions>
+  </mat-card>
+  

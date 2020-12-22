@@ -1,0 +1,59 @@
+<mat-card>
+    <mat-card-content>
+    <form>
+        <mat-form-field class="halfwidth">
+            <mat-label>Product Id</mat-label>
+            <input [(ngModel)]="product.id" name="id" matInput >
+          </mat-form-field>
+          <br>
+      <mat-form-field class="halfwidth">
+        <mat-label>Product Name</mat-label>
+        <input [(ngModel)]="product.name" name="name" matInput >
+      </mat-form-field>
+      <br>
+      <mat-form-field class="halfwidth">
+        <mat-label>Price</mat-label>
+        <input [(ngModel)]="product.price" name="price" matInput >
+      </mat-form-field>
+      <br>
+  
+      <mat-form-field class="halfwidth">
+        <mat-label>Available Date</mat-label>
+        <input [(ngModel)]="product.availableDate" name="availableDate" matInput >
+      </mat-form-field>
+      <br>
+      <mat-form-field class="halfwidth">
+        <mat-label>Quantity</mat-label>
+        <input [(ngModel)]="product.quantity" name="quantity" matInput >
+      </mat-form-field>
+      <br>
+      <mat-form-field class="halfwidth">
+        <mat-label>Calories</mat-label>
+        <input [(ngModel)]="product.kcal" name="kcal" matInput >
+      </mat-form-field>
+      <br>
+  
+      <mat-form-field class="halfwidth">
+        <mat-label>WeightInGrams</mat-label>
+        <input [(ngModel)]="product.weightInGrams" name="weightInGrams" matInput >
+      </mat-form-field>
+      <br>
+      <mat-form-field class="halfwidth">
+        <mat-label>Is Special?</mat-label>
+        <input [(ngModel)]="product.isSpecial" name="isSpecial" matInput >
+      </mat-form-field>
+      <br>
+      <mat-form-field class="halfwidth">
+        <mat-label>Is Veg?</mat-label>
+        <input [(ngModel)]="product.isVeg" name="isVeg" matInput >
+      </mat-form-field>
+     
+    
+    </form>
+  
+    <button (click)="post(product)" mat-button>Add</button> |
+  
+    <button (click)="delete(product)" mat-button>Delete</button> |
+  
+    <button (click)="update(product)" mat-button>Update</button>
+  
